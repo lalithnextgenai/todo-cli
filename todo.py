@@ -77,8 +77,12 @@ def main():
         choice = input("Choose an option: ")
 
         if choice == "1":
-            description = input("Enter task: ")
-            add_task(tasks, description)
+            description = input("Enter task: ").strip()
+
+            if description:
+                add_task(tasks, description)
+            else:
+                print("Task description cannot be empty.")
 
         elif choice == "2":
             list_tasks(tasks)
@@ -110,6 +114,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
