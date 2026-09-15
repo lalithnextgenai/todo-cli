@@ -66,7 +66,7 @@ def main():
     tasks = load_tasks()
 
     while True:
-        print("\nTo-Do List")
+        print("\nPERSONAL TO-DO LIST")
         print("1. Add task")
         print("2. List tasks")
         print("3. Complete task")
